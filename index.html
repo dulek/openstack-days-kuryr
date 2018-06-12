@@ -55,7 +55,7 @@ template: agenda_layout
 # AGENDA
 --
 
-1. K8s and Container Network Interface
+1. Networking concepts in K8s and CNI
 --
 
 2. Kuryr-Kubernetes
@@ -122,11 +122,15 @@ through a single IP or hostname. There are multiple types of Services:
 
 --
 
-**Ingress** - entity defining rules allowing inbound connections to reach
+**Ingress (Router)** - entity defining rules allowing inbound connections to reach
 services on K8s cluster, normally implemented as L7 load balancer. Single
 Ingress can give **multiple** services externally reachable URLs, LB, terminate
 SSL. Requires *Ingress controller*, e.g. pod that watches for Ingress resources
 and adjusts its nginx rules accordingly.
+
+--
+
+**Network Policies** - Kubernetes equivalent of Security Groups.
 
 ---
 
@@ -134,11 +138,24 @@ and adjusts its nginx rules accordingly.
 
 ## Service of type `LoadBalancer` vs Ingress
 
-.left-column[
-**TODO**
-]
+.diag[
 
-#.right-column[![Insert graphic here](assets/screenshots/horizon-regions.png)]
+.left-column[
+.center[`LoadBalancer` Service]
+
+![Insert graphic here](assets/lb-service.svg)]
+
+]
+--
+
+.diag[
+
+.right-column[
+.center[Ingress]
+
+![Insert graphic here](assets/ingress.svg)]
+
+]
 
 ---
 
@@ -179,15 +196,110 @@ and adjusts its nginx rules accordingly.
 
 # Kubernetes and CNI
 
-## CNI ADD and DEL example, TODO
+## CNI ADD example
 
-#.fill-width[![Insert graphic here](assets/screenshots/horizon-quotas.png)]
+.left-column[
+* `CNI_COMMAND="ADD"`
+* `CNI_CONTAINERID="<some-unique-id>"`
+* `CNI_NETNS="CONTAINER NET NS"`
+* `CNI_IFNAME="eth0"`
+]
+
+.right-column[.center[![Insert graphic here](assets/netns1.svg)]]
+
+---
+
+# Kubernetes and CNI
+
+## CNI ADD example
+
+.left-column[
+* `CNI_COMMAND="ADD"`
+* `CNI_CONTAINERID="<some-unique-id>"`
+* `CNI_NETNS="CONTAINER NET NS"`
+* `CNI_IFNAME="eth0"`
+]
+
+.right-column[.center[![Insert graphic here](assets/netns2.svg)]]
+
+---
+
+# Kubernetes and CNI
+
+## CNI ADD example
+
+.left-column[
+* `CNI_COMMAND="ADD"`
+* `CNI_CONTAINERID="<some-unique-id>"`
+* `CNI_NETNS="CONTAINER NET NS"`
+* `CNI_IFNAME="eth0"`
+]
+
+.right-column[.center[![Insert graphic here](assets/netns3.svg)]]
+
+---
+
+# Kubernetes and CNI
+
+## CNI ADD example
+
+.left-column[
+* `CNI_COMMAND="ADD"`
+* `CNI_CONTAINERID="<some-unique-id>"`
+* `CNI_NETNS="CONTAINER NET NS"`
+* `CNI_IFNAME="eth0"`
+]
+
+.right-column[.center[![Insert graphic here](assets/netns4.svg)]]
+
+---
+
+# Kubernetes and CNI
+
+## CNI ADD example
+
+.left-column[
+* `CNI_COMMAND="ADD"`
+* `CNI_CONTAINERID="<some-unique-id>"`
+* `CNI_NETNS="CONTAINER NET NS"`
+* `CNI_IFNAME="eth0"`
+]
+
+.right-column[.center[![Insert graphic here](assets/netns5.svg)]]
+
+---
+
+# Kubernetes and CNI
+
+## CNI ADD example
+
+.left-column[
+* `CNI_COMMAND="ADD"`
+* `CNI_CONTAINERID="<some-unique-id>"`
+* `CNI_NETNS="CONTAINER NET NS"`
+* `CNI_IFNAME="eth0"`
+]
+
+.right-column[.center[![Insert graphic here](assets/netns6.svg)]]
 
 ---
 
 template: section_layout
 
 Kuryr-Kubernetes
+
+---
+
+# Kuryr-Kubernetes
+
+## Logos or mascots
+
+
+#.left-column[![Insert graphic here](assets/kuryr-logo.png)]
+
+--
+
+#.right-column[.center[.half[![Insert graphic here](assets/kuryr-logo2.png)]]]
 
 ---
 
@@ -202,7 +314,7 @@ fuxi - Docker volume plugin, fuxi-kubernetes - K8s volume plugin.
 --
 
 * Repo: https://git.openstack.org/openstack/kuryr-kubernetes
-* *kuryr-kubernetes* on pip.
+* Written in Python, *kuryr-kubernetes* on Python Package Index.
 --
 
 * Developers from Red Hat, Huawei, Intel, Samsung…
@@ -229,7 +341,20 @@ fuxi - Docker volume plugin, fuxi-kubernetes - K8s volume plugin.
 
 --
 * Harness the power of OpenStack Neutron for your Kubernetes cluster!
-  * TODO: Neutron meme.
+
+--
+
+.center[.seventy[![Insert graphic here](assets/neutron-meme.jpg)]]
+---
+
+# Kuryr-Kubernetes
+
+## Motivations
+
+* ~~Harness the power of OpenStack Neutron for your Kubernetes cluster!~~
+--
+
+* Use some of Neutron functionalities for Pods networking.
 --
 
 * Provide **interconnectivity** between OpenStack VMs and Kubernetes Pods and
@@ -240,7 +365,14 @@ fuxi - Docker volume plugin, fuxi-kubernetes - K8s volume plugin.
 
 * Avoiding having multiple network overlays in **Kubernetes on OpenStack**
   deployments.
-  * TODO: Multiple overlay diagram.
+
+---
+
+# Kuryr-Kubernetes
+
+## Multiple-Overlays
+
+.center[.seventy[![Insert graphic here](assets/multiple-overlays.svg)]]
 
 ---
 
@@ -250,22 +382,73 @@ fuxi - Docker volume plugin, fuxi-kubernetes - K8s volume plugin.
 
 --
 * kuryr-controller
+  * Responsible for OpenStack API operations.
+
+--
 * kuryr-cni
+  * Executed by CNI
+  * When deployed without kuryr-daemon, wires the pods
+
+--
 * kuryr-daemon (optional in Queens, recommended in Rocky+)
-
-TODO: Kuryr connection diagram.
-
----
-
-# Kuryr-Kubernetes
-
-## Baremetal networking
+  * Watches for new pods and wires them when requested by kuryr-cni.
 
 ---
 
 # Kuryr-Kubernetes
 
-## Nested networking
+## Kuryr components
+
+.eighty[.center[![Insert graphic here](assets/kuryr-diagram.png)]]
+
+---
+
+# Kuryr-Kubernetes
+
+## Baremetal containers networking
+
+.sixty[.center[![Insert graphic here](assets/baremetal-networking.svg)]]
+
+---
+
+# Kuryr-Kubernetes
+
+## Nested containers networking
+
+.sixty[.center[![Insert graphic here](assets/nested-networking.svg)]]
+
+---
+
+# Kuryr-Kubernetes
+
+## Port pools
+
+* To mitigate Neutron performance issues, we're doing port pooling.
+
+--
+* Pooling happens in kuryr-controller.
+
+--
+* Pool key consists of:
+  * host
+  * project_id
+  * security_groups
+  * network_id
+
+--
+* Pool gets populated with ports when we need the first on or on demand.
+
+--
+* We want to make this faster by moving port choice from the pool into the
+  kuryr-daemon.
+
+---
+
+# Kuryr-Kubernetes
+
+## Services support
+
+.half[.center[![Insert graphic here](assets/services.svg)]]
 
 ---
 
@@ -273,23 +456,95 @@ TODO: Kuryr connection diagram.
 
 ## Containerized deployment
 
+```
+apiVersion: apps/v1beta1
+kind: Deployment
+spec:
+  replicas: 1
+  template:
+	spec:
+	  serviceAccountName: kuryr-controller
+	  automountServiceAccountToken: true
+	  hostNetwork: true
+	  containers:
+	  - image: kuryr/controller:latest
+		readinessProbe:
+		  httpGet:
+			path: /ready
+		livenessProbe:
+		  httpGet:
+			path: /alive
+```
+
 ---
 
 # Kuryr-Kubernetes
 
-## Current limitations
+## Current limitations (as of Queens release - 0.4.3)
+--
+
+* Performance issues - Neutron
+
+--
+* Only a single kuryr-controller in environment
+
+--
+* No support for Ingress and Routers
+
+--
+* No support for Network Policies
 
 ---
 
 # Kuryr-Kubernetes
 
 ## Features in development
+--
+
+* Ingress and Router support (Rocky)
+  * It'll be L7 LB - Kuryr will translate the rules.
+
+--
+* Active/Passive HA (Rocky)
+  * Only on containerized deployment.
+
+--
+* Moving VIF management to kuryr-daemon (Rocky)
+
+--
+* Network-per-namespace (Rocky)
+
+--
+* Neutron performance improvements (Rocky)
+
+--
+* Multi-network support (Rocky or Stein)
+
+--
+* Network Policies support (Rocky or Stein)
+
+--
+* DPDK support (Rocky or Stein)
+
+--
+* Active/Active HA (Stein)
 
 ---
 
 # Kuryr-Kubernetes
 
 ## How to use, how to contribute
+
+* Documentation: https://docs.openstack.org/kuryr-kubernetes/latest
+--
+
+* IRC channel: [#openstack-kuryr@Freenode](irc://chat.freenode.net/openstack-kuryr)
+--
+
+* Bugs: https://bugs.launchpad.net/kuryr-kubernetes
+--
+
+* How to contribute: https://wiki.openstack.org/wiki/How_To_Contribute
 
 ---
 

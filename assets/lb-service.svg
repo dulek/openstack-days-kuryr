@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="31cm" height="25cm" viewBox="178 63 603 493" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="180" y="275.75" width="600" height="279.25"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="180" y="275.75" width="600" height="279.25"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:Overpass;font-style:normal;font-weight:normal" x="480" y="305.025">
+      <tspan x="480" y="305.025"></tspan>
+      <tspan x="480" y="326.192"></tspan>
+      <tspan x="480" y="347.358"></tspan>
+      <tspan x="480" y="368.525"></tspan>
+      <tspan x="480" y="389.692"></tspan>
+      <tspan x="480" y="410.858"></tspan>
+      <tspan x="480" y="432.025"></tspan>
+      <tspan x="480" y="453.192"></tspan>
+      <tspan x="480" y="474.358"></tspan>
+      <tspan x="480" y="495.525"></tspan>
+      <tspan x="480" y="516.692"></tspan>
+      <tspan x="480" y="537.858">KUBERNETES CLUSTER</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e4e4e4" x="320" y="160" width="280" height="80"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #7c7c7c" x="320" y="160" width="280" height="80"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:Overpass;font-style:normal;font-weight:normal" x="460" y="206.067">
+      <tspan x="460" y="206.067">Load Balancer</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e4e4e4" x="320" y="320" width="280" height="82"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #7c7c7c" x="320" y="320" width="280" height="82"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:Overpass;font-style:normal;font-weight:normal" x="460" y="367.067">
+      <tspan x="460" y="367.067">Service</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e4e4e4" x="320" y="460" width="51.1" height="43.1667"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #7c7c7c" x="320" y="460" width="51.1" height="43.1667"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:Overpass;font-style:normal;font-weight:normal" x="345.55" y="487.65">
+      <tspan x="345.55" y="487.65">Pod</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e4e4e4" x="435.225" y="460" width="51.1" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #7c7c7c" x="435.225" y="460" width="51.1" height="44"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:Overpass;font-style:normal;font-weight:normal" x="460.775" y="488.067">
+      <tspan x="460.775" y="488.067">Pod</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e4e4e4" x="549.256" y="460" width="51.1" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #7c7c7c" x="549.256" y="460" width="51.1" height="44"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:Overpass;font-style:normal;font-weight:normal" x="574.806" y="488.067">
+      <tspan x="574.806" y="488.067">Pod</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" x1="460" y1="248" x2="460" y2="302.264"/>
+    <polygon style="fill: #f2792c" points="460,309.764 455,299.764 460,302.264 465,299.764 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" points="460,309.764 455,299.764 460,302.264 465,299.764 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" x1="460" y1="88" x2="460" y2="142.264"/>
+    <polygon style="fill: #f2792c" points="460,149.764 455,139.764 460,142.264 465,139.764 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" points="460,149.764 455,139.764 460,142.264 465,139.764 "/>
+  </g>
+  <text font-size="16.9333" style="fill: #f2792c;text-anchor:start;font-family:Overpass;font-style:normal;font-weight:normal" x="440" y="80">
+    <tspan x="440" y="80">Traffic</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" x1="420.141" y1="402.995" x2="373.691" y2="451.934"/>
+    <polygon style="fill: #f2792c" points="368.528,457.374 371.785,446.679 373.691,451.934 379.039,453.563 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" points="368.528,457.374 371.785,446.679 373.691,451.934 379.039,453.563 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" x1="460.269" y1="402.978" x2="460.565" y2="449.266"/>
+    <polygon style="fill: #f2792c" points="460.613,456.766 455.549,446.799 460.565,449.266 465.549,446.734 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" points="460.613,456.766 455.549,446.799 460.565,449.266 465.549,446.734 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" x1="499.829" y1="402.978" x2="546.284" y2="451.939"/>
+    <polygon style="fill: #f2792c" points="551.446,457.38 540.936,453.567 546.284,451.939 548.19,446.684 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" points="551.446,457.38 540.936,453.567 546.284,451.939 548.19,446.684 "/>
+  </g>
+</svg>

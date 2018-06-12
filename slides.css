@@ -131,7 +131,7 @@ body {
                       url("assets/bg_gray_bottomright.svg");
     background-position: 0px 0px, bottom right;
     color: #000000;
-    padding: 4% 6% 0% 10% !important;
+    padding: 0% 6% 0% 10% !important;
     font-size: 20px;
 }
 .content_slide h1 {
@@ -374,6 +374,34 @@ table tbody tr:nth-child(even) {
 
 .fill-width img {
     width: 100%;
+}
+
+.half img {
+    width: 60%
+}
+
+.sixty img {
+    width: 60%;
+}
+
+.seventy img {
+    width: 70%;
+}
+
+.eighty img {
+    width: 85%;
+}
+
+.diag .left-column img {
+    position: absolute;
+    bottom: 80px;
+    width: 40%;
+}
+
+.diag .right-column img {
+    position: absolute;
+    bottom: 80px;
+    width: 40%;
 }
 
 .preserve-space {

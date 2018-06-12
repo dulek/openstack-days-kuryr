@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="37cm" height="26cm" viewBox="-262 37 723 519" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="-260" y="120" width="720" height="435"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-260" y="120" width="720" height="435"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:Overpass;font-style:normal;font-weight:normal" x="100" y="153.067">
+      <tspan x="100" y="153.067"></tspan>
+      <tspan x="100" y="174.233"></tspan>
+      <tspan x="100" y="195.4"></tspan>
+      <tspan x="100" y="216.567"></tspan>
+      <tspan x="100" y="237.733"></tspan>
+      <tspan x="100" y="258.9"></tspan>
+      <tspan x="100" y="280.067"></tspan>
+      <tspan x="100" y="301.233"></tspan>
+      <tspan x="100" y="322.4"></tspan>
+      <tspan x="100" y="343.567"></tspan>
+      <tspan x="100" y="364.733"></tspan>
+      <tspan x="100" y="385.9"></tspan>
+      <tspan x="100" y="407.067"></tspan>
+      <tspan x="100" y="428.233"></tspan>
+      <tspan x="100" y="449.4"></tspan>
+      <tspan x="100" y="470.567"></tspan>
+      <tspan x="100" y="491.733"></tspan>
+      <tspan x="100" y="512.9"></tspan>
+      <tspan x="100" y="534.067">KUBERNETES CLUSTER</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e4e4e4" x="-220" y="160" width="640" height="80"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #7c7c7c" x="-220" y="160" width="640" height="80"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:Overpass;font-style:normal;font-weight:normal" x="100" y="206.067">
+      <tspan x="100" y="206.067">Ingress Controller</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" x1="100" y1="68" x2="100" y2="142.264"/>
+    <polygon style="fill: #f2792c" points="100,149.764 95,139.764 100,142.264 105,139.764 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" points="100,149.764 95,139.764 100,142.264 105,139.764 "/>
+  </g>
+  <text font-size="22.5778" style="fill: #f2792c;text-anchor:start;font-family:Overpass;font-style:normal;font-weight:normal" x="60" y="60">
+    <tspan x="60" y="60">Traffic</tspan>
+  </text>
+  <g>
+    <rect style="fill: #e4e4e4" x="-220" y="320" width="280" height="82"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #7c7c7c" x="-220" y="320" width="280" height="82"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:Overpass;font-style:normal;font-weight:normal" x="-80" y="367.067">
+      <tspan x="-80" y="367.067">Service</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e4e4e4" x="-220" y="460" width="51.1" height="43.1667"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #7c7c7c" x="-220" y="460" width="51.1" height="43.1667"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:Overpass;font-style:normal;font-weight:normal" x="-194.45" y="487.65">
+      <tspan x="-194.45" y="487.65">Pod</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e4e4e4" x="-104.775" y="460" width="51.1" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #7c7c7c" x="-104.775" y="460" width="51.1" height="44"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:Overpass;font-style:normal;font-weight:normal" x="-79.2253" y="488.067">
+      <tspan x="-79.2253" y="488.067">Pod</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e4e4e4" x="9.25566" y="460" width="51.1" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #7c7c7c" x="9.25566" y="460" width="51.1" height="44"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:Overpass;font-style:normal;font-weight:normal" x="34.8057" y="488.067">
+      <tspan x="34.8057" y="488.067">Pod</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e4e4e4" x="140" y="320" width="280" height="82"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #7c7c7c" x="140" y="320" width="280" height="82"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:Overpass;font-style:normal;font-weight:normal" x="280" y="367.067">
+      <tspan x="280" y="367.067">Service</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e4e4e4" x="140" y="460" width="51.1" height="43.1667"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #7c7c7c" x="140" y="460" width="51.1" height="43.1667"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:Overpass;font-style:normal;font-weight:normal" x="165.55" y="487.65">
+      <tspan x="165.55" y="487.65">Pod</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e4e4e4" x="254.479" y="460" width="51.1" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #7c7c7c" x="254.479" y="460" width="51.1" height="44"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:Overpass;font-style:normal;font-weight:normal" x="280.029" y="488.067">
+      <tspan x="280.029" y="488.067">Pod</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e4e4e4" x="370" y="460" width="51.1" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #7c7c7c" x="370" y="460" width="51.1" height="44"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:Overpass;font-style:normal;font-weight:normal" x="395.55" y="488.067">
+      <tspan x="395.55" y="488.067">Pod</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" x1="54.1541" y1="241.007" x2="-25.7877" y2="312.51"/>
+    <polygon style="fill: #f2792c" points="-31.3778,317.51 -27.2577,307.117 -25.7877,312.51 -20.5909,314.57 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" points="-31.3778,317.51 -27.2577,307.117 -25.7877,312.51 -20.5909,314.57 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" x1="145.846" y1="241.007" x2="225.788" y2="312.51"/>
+    <polygon style="fill: #f2792c" points="231.378,317.51 220.591,314.57 225.788,312.51 227.258,307.117 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" points="231.378,317.51 220.591,314.57 225.788,312.51 227.258,307.117 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" x1="-119.859" y1="402.995" x2="-166.309" y2="451.934"/>
+    <polygon style="fill: #f2792c" points="-171.472,457.374 -168.215,446.679 -166.309,451.934 -160.961,453.563 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" points="-171.472,457.374 -168.215,446.679 -166.309,451.934 -160.961,453.563 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" x1="-79.7312" y1="402.978" x2="-79.4348" y2="449.266"/>
+    <polygon style="fill: #f2792c" points="-79.3868,456.766 -84.4508,446.799 -79.4348,449.266 -74.451,446.734 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" points="-79.3868,456.766 -84.4508,446.799 -79.4348,449.266 -74.451,446.734 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" x1="-40.1712" y1="402.978" x2="6.28401" y2="451.939"/>
+    <polygon style="fill: #f2792c" points="11.4462,457.38 0.936119,453.567 6.28401,451.939 8.19043,446.684 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" points="11.4462,457.38 0.936119,453.567 6.28401,451.939 8.19043,446.684 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" x1="240.141" y1="402.995" x2="193.691" y2="451.934"/>
+    <polygon style="fill: #f2792c" points="188.528,457.374 191.785,446.679 193.691,451.934 199.039,453.563 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" points="188.528,457.374 191.785,446.679 193.691,451.934 199.039,453.563 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" x1="280.01" y1="402.978" x2="280.021" y2="449.266"/>
+    <polygon style="fill: #f2792c" points="280.023,456.766 275.02,446.767 280.021,449.266 285.02,446.765 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" points="280.023,456.766 275.02,446.767 280.021,449.266 285.02,446.765 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" x1="320.087" y1="402.978" x2="366.864" y2="451.961"/>
+    <polygon style="fill: #f2792c" points="372.044,457.385 361.522,453.606 366.864,451.961 368.754,446.7 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #f2792c" points="372.044,457.385 361.522,453.606 366.864,451.961 368.754,446.7 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #f2792c;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="100" y="200">
+    <tspan x="100" y="200"></tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #f2792c;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="100" y="337.5">
+    <tspan x="100" y="337.5"></tspan>
+  </text>
+  <text font-size="12.5194" style="fill: #f2792c;text-anchor:start;font-family:Overpass;font-style:italic;font-weight:normal" x="-18.8106" y="230.246">
+    <tspan x="-18.8106" y="230.246">foo.cooldomain.com</tspan>
+  </text>
+  <text font-size="12.5194" style="fill: #f2792c;text-anchor:start;font-family:Overpass;font-style:italic;font-weight:normal" x="117.91" y="229.057">
+    <tspan x="117.91" y="229.057">cooldomain.com/bar</tspan>
+  </text>
+</svg>
